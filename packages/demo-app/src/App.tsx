@@ -68,7 +68,7 @@ const App: React.FC = () => {
 
       <main style={{ flex: 1, overflow: 'hidden' }}>
         <Routes>
-          <Route path="/" element={<Navigate to="/config-panel" replace />} />
+          <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="/config-panel" element={<ConfigPanelDemo />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/scada" element={<ScadaPanel />} />
