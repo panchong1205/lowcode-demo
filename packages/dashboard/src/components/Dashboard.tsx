@@ -192,7 +192,7 @@ export const Dashboard: React.FC = () => {
   };
 
   return (
-    <div style={{ padding: 20, backgroundColor: theme === 'dark' ? '#0f172a' : '#f0f4f8', minHeight: '100%' }}>
+    <div style={{ padding: 20, backgroundColor: theme === 'dark' ? '#0f172a' : '#f0f4f8', height: '100%', overflow: 'auto' }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 20, flexWrap: 'wrap', gap: 12 }}>
         <div>
           <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700, color: theme === 'dark' ? '#e2e8f0' : '#1a1d23' }}>
