@@ -71,7 +71,6 @@ export function validateFlowGraph(graph: DSLGraph): DSLValidationResult {
     }
   }
 
-  const nodeIds = new Set(graph.nodes.map((n) => n.id));
   const referencedNodes = new Set<string>();
   for (const edge of graph.edges) {
     referencedNodes.add(edge.source);

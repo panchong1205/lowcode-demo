@@ -11,6 +11,7 @@ export interface RenderContext {
 export interface RenderComponentProps {
   schema: ComponentSchema;
   context: RenderContext;
+  style?: React.CSSProperties;
   children?: React.ReactNode;
 }
 

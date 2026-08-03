@@ -4,14 +4,13 @@ import ReactFlow, {
   Controls,
   MiniMap,
   Panel,
-  useReactFlow,
   type Node,
   type Edge,
 } from 'reactflow';
 import 'reactflow/dist/style.css';
 import { useFlowStore, type FlowNodeData } from '../store/flowStore';
 import { nodeTypes } from './nodes';
-import { Button, Input, Select } from '@lowcode/ui';
+import { Button, Input } from '@lowcode/ui';
 
 const defaultNodes: Node<FlowNodeData>[] = [
   {
@@ -62,8 +61,6 @@ export const FlowEditor: React.FC = () => {
     validate,
     updateNode,
   } = useFlowStore();
-
-  const reactFlow = useReactFlow();
 
   useEffect(() => {
     if (nodes.length === 0) {

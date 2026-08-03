@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { Schema, ComponentSchema, PageSchema } from '@lowcode/core';
+import type { ComponentSchema, PageSchema } from '@lowcode/core';
 import { configEngineReducer, createInitialConfigState, getSelectedComponent, canUndo, canRedo, exportSchema, type ConfigEngineState, type ConfigEngineAction } from '@lowcode/engine';
 
 interface ConfigStore extends ConfigEngineState {

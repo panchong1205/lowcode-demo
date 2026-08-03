@@ -73,7 +73,6 @@ export const SchemaPreview: React.FC<SchemaPreviewProps> = ({ schema }) => {
 
 function syntaxHighlight(json: string): React.ReactNode {
   const parts: React.ReactNode[] = [];
-  let i = 0;
   const regex = /("(?:[^"\\]|\\.)*")\s*:|("(?:[^"\\]|\\.)*")|(\btrue\b|\bfalse\b|\bnull\b)|(-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)/g;
   let lastIndex = 0;
   let match;

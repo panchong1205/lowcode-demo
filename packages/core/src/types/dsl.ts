@@ -40,7 +40,7 @@ export interface DSLValidationError {
 }
 
 export interface DSLValidationWarning {
-  type: 'unreachable' | 'redundant' | 'deprecated';
+  type: 'unreachable' | 'redundant' | 'deprecated' | 'missing_start' | 'missing_end' | 'disconnected';
   message: string;
   nodeId?: string;
 }

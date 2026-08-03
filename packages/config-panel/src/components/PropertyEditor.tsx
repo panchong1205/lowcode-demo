@@ -1,6 +1,6 @@
 import React from 'react';
 import type { ComponentSchema } from '@lowcode/core';
-import { Input, Select } from '@lowcode/ui';
+import { Input } from '@lowcode/ui';
 
 interface PropertyEditorProps {
   component: ComponentSchema | null;

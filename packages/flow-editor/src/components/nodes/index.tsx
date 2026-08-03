@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { Handle, Position, type NodeProps } from 'reactflow';
-import type { FlowNodeData } from '../store/flowStore';
+import type { FlowNodeData } from '../../store/flowStore';
 
 const nodeStyles: Record<string, { bg: string; border: string; icon: string }> = {
   trigger: { bg: '#dbeafe', border: '#2563eb', icon: '⚡' },

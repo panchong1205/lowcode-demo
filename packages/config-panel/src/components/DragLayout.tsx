@@ -1,5 +1,5 @@
 import React from 'react';
-import type { ComponentSchema } from '@lowcode/core';
+import type { ComponentSchema, ComponentType } from '@lowcode/core';
 import { useDrop } from '@lowcode/ui';
 
 interface DragLayoutProps {
@@ -19,7 +19,7 @@ export const DragLayout: React.FC<DragLayoutProps> = ({
 }) => {
   const { isOver, dropProps } = useDrop<HTMLDivElement>({
     onDrop: (data) => {
-      const { type } = data as { type: string };
+      const { type } = data as { type: ComponentType };
       const newComponent: ComponentSchema = {
         id: `comp-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
         type,
@@ -100,7 +100,7 @@ const RenderTreeNode: React.FC<RenderTreeNodeProps> = ({
   const isSelected = selectedId === component.id;
   const { isOver, dropProps } = useDrop<HTMLDivElement>({
     onDrop: (data) => {
-      const { type } = data as { type: string };
+      const { type } = data as { type: ComponentType };
       const newComponent: ComponentSchema = {
         id: `comp-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
         type,

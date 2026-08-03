@@ -1,13 +1,4 @@
 {
   "extends": "../../tsconfig.base.json",
-  "include": ["src"],
-  "references": [
-    { "path": "../core" },
-    { "path": "../engine" },
-    { "path": "../ui" },
-    { "path": "../config-panel" },
-    { "path": "../dashboard" },
-    { "path": "../scada" },
-    { "path": "../flow-editor" }
-  ]
+  "include": ["src"]
 }

@@ -5,7 +5,6 @@ import { DragLayout } from './DragLayout';
 import { PropertyEditor } from './PropertyEditor';
 import { SchemaPreview } from './SchemaPreview';
 import { Button } from '@lowcode/ui';
-import type { ComponentSchema } from '@lowcode/core';
 
 export const ConfigPanel: React.FC = () => {
   const {
