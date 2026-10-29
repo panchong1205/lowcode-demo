@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { Node, Edge, Connection, NodeChange, EdgeChange } from 'reactflow';
+import { applyNodeChanges, applyEdgeChanges, type Node, type Edge, type Connection, type NodeChange, type EdgeChange } from 'reactflow';
 
 export interface FlowNodeData {
   label: string;
